@@ -3,8 +3,7 @@ from workflow import Workflow3, Variables
 import sys
 import soco
 import os
-
-
+from pipes import quote
 #say -v Milena {query} -o /tmp/tts.aiff && /usr/local/bin/lame --quiet -m m /tmp/tts.aiff /share/tts.mp3
 #say -v $voice $string -o /tmp/tts.aiff && /usr/local/bin/lame --quiet -m m /tmp/tts.aiff /share/tts.mp3
 
