@@ -32,6 +32,9 @@ file_to_upload = sys.argv[2]
 github_token = str(GITHUB_ACCESS_TOKEN)
 
 #curl -i -H 'Authorization: token 5b8e3a4d92993282d2a8f20b5fe4910edc9f82dd' https://api.github.com/user/repos
+#curl -i -H 'Authorization: token be39f8d55ceb5ce9eb9cdf20d55eb4395578e136' https://api.github.com/user/repos
+#curl -i -H 'Authorization: token be39f8d55ceb5ce9eb9cdf20d55eb4395578e136' https://api.github.com/repos/jeeftor/AlfredSonosTTS/releases
+
 
 request_headers = {
   "Content-Type": "application/json",
