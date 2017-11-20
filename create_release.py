@@ -82,6 +82,8 @@ upload_data_len = length = os.path.getsize(upload_path)
 upload_data = open(upload_path, "rb")
 url = url + "?name={}".format(file_to_upload)
 
+print "UPLOAD URL :" + url
+
 # Upload the new workflow file
 request = urllib2.Request(url, data=upload_data, headers=request_headers)
 request.add_header('Cache-Control', 'no-cache')
