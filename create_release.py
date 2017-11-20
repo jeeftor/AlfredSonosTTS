@@ -44,7 +44,7 @@ request_headers = {
 
 print request_headers
 
-release_notes = open('.notes.txt', 'r').read
+release_notes = open('.notes.txt', 'r').read()
 
 # Release INFO
 payload = {
