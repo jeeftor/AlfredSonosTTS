@@ -85,7 +85,8 @@
 			</dict>
 		</array>
 		<key>B66A37BB-2D5A-4D07-9DEA-B9EC8441B4C6</key>
-		<array/>
+		<array>
+		</array>
 		<key>E4A2B0BC-E519-4DC7-8AB1-8E6935289754</key>
 		<array>
 			<dict>
@@ -717,7 +718,7 @@ If you are using homebrew then dont change lame_search_path.</string>
 		<string>x-file-cifs://iMac/share/tts.mp3</string>
 	</dict>
 	<key>version</key>
-	<string>1</string>
+	<string>1.0.1</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
