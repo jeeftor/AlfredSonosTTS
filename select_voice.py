@@ -78,7 +78,10 @@ def main(wf):
     voices = get_voices()
     for key, value in sorted(voices.items()):
         # print key,value
-        flag = emoji(value[3:]).decode('unicode_escape')
+        try:
+        	flag = emoji(value[3:]).decode('unicode_escape')
+        except:
+        	flag = ""
 
         wf.add_item(key + " " + flag + " [" + value + "]", 'Select this voice', arg=key, valid=True,
                     icon=get_gender(key))
