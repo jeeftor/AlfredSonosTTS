@@ -1,4 +1,4 @@
-#TTS for Sonos
+# TTS for Sonos
 
 **COMMANDS:**
 
@@ -37,7 +37,7 @@ And there you will see the 'sonos' name for your share
 ![image](doc_images/share.png)
 
 
-In our case its `//iMac/share` (which maps to `/share` on the local disk).  You want to make sure you have a `tts.png` file that exists in this directory.  
+In our case its `//iMac/share` (which maps to `/share` on the local disk).  You want to make sure you have a `tts.png` file that exists in this directory.
 
 ![tts](doc_images/tts.png)
 
@@ -51,7 +51,7 @@ At this point everything "should" be ready to go - there are some additional ste
 
 ### Installing LAME
 
-This plugin needs LAME to be installed.  The first time you run it will prompt you it is not installed.  
+This plugin needs LAME to be installed.  The first time you run it will prompt you it is not installed.
 
 ![first](doc_images/firstRun.png)
 
