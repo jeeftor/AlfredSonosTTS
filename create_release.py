@@ -62,7 +62,10 @@ data = json.dumps(payload)
 clen = len(data)
 request_headers['Content-Length'] = clen
 url = "https://api.github.com/repos/{}/{}/releases".format(GITHUB_USER, GITHUB_REPO)
+print "\n"
 print url
+print request_headers
+print "\n"
 req = urllib2.Request(url, data, headers=request_headers)
 f = urllib2.urlopen(req)
 response = f.read()
