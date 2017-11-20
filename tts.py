@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr//bin/python
 
 import os,sys
 from workflow import Workflow3, Variables
@@ -17,7 +17,7 @@ def main(wf):
 	status = result_tuple[0] # 0 if lame was found
 	output = result_tuple[1] # cmd output (we dont realy use it)
 
-	# A valid setup will allow for TTS to occur	
+	# A valid setup will allow for TTS to occur
 	valid_setup = True
 
 	voice = wf.stored_data('voice')
@@ -25,22 +25,22 @@ def main(wf):
 
 
 	if status not in [0,'0']:
-		wf.add_item('The LAME mp3 encoder is not installed',"Select this option to try to install it with homebrew: 'brew install lame'", 
+		wf.add_item('The LAME mp3 encoder is not installed',"Select this option to try to install it with homebrew: 'brew install lame'",
 			arg='config::InstallLame',
 			icon='icons/icons8-nothing_found.png',
 			valid=True)
 		valid_setup = False
 
 	if voice is None:
-		wf.add_item('No voice Selected','Select this option to pick a different voice', 
-			arg='config::SelectVoice', 
+		wf.add_item('No voice Selected','Select this option to pick a different voice',
+			arg='config::SelectVoice',
 			icon='icons/icons8-nothing_found.png',
 			valid=True )
 		valid_setup = False
-				
-	if speaker is None:	
-		wf.add_item('No Speaker Selected','Select this option to use a different Sonos Speaker', 
-			arg='config::SelectSpeaker', 
+
+	if speaker is None:
+		wf.add_item('No Speaker Selected','Select this option to use a different Sonos Speaker',
+			arg='config::SelectSpeaker',
 			icon='icons/icons8-nothing_found.png',
 			valid=True )
 		valid_setup = False
@@ -61,5 +61,5 @@ def main(wf):
 
 if __name__ == '__main__':
     wf = Workflow3(libraries=['./lib'])
-    
+
     sys.exit(wf.run(main))
